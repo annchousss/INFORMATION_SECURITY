@@ -1,0 +1,191 @@
+#title {
+    font-weight: bold;
+}
+
+.cvssjs i {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    background: url("cvssicons.png") 0 0 no-repeat;
+    vertical-align: middle;
+    background-size: cover;
+    margin-right: 4px;
+    margin: 2px;
+    font-size: 40px;
+}
+
+.cvssjs a {
+    color: #489;
+    text-decoration: none;
+}
+
+.cvssjs dl {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    background-color: #fff;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin: 10px;
+}
+.cvssjs dt {
+    color: #000;
+    padding: 10px;
+    overflow-x: hidden;
+    letter-spacing: .5px;
+    font-weight: bold;
+}
+
+.cvssjs dd {
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+
+.cvssjs dd label,
+#predef span {
+    min-width: 7.5em;
+    padding: 0px 2px 0px 2px;
+    display: block;
+    margin: 1px;
+    margin-top: 0px;
+    background-color: #f7f7f4;
+    vertical-align: middle;
+}
+
+.cvssjs dd:last-child label,
+#predef span:last-child {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.cvssjs dd small {
+    display: none;
+}
+
+.cvssjs dd:hover small {
+    position: absolute;
+    max-width: 220px;
+    border: solid 1px #333;
+    display: block;
+    color: black;
+    background-color: #FFFFC1;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: .7em;
+    margin-left: 5em;
+    box-shadow: 2px 2px 5px #333;
+    z-index: 1;
+}
+
+#predef span:hover:before {
+    content: "<";
+    display: block;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: -2px;
+    color: #424a40;
+}
+
+.cvssjs dd > input {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.cvssjs dd:nth-child(2) input:checked + label,
+.cvssjs .Critical {
+    background-color: burlywood;
+}
+
+.cvssjs dd input:checked + label,
+.cvssjs .High {
+    background-color: burlywood;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.cvssjs dd:last-child input:checked + label,
+.cvssjs dl.AV dd:nth-child(4) input:checked + label,
+.cvssjs .Medium {
+    background-color: burlywood;
+}
+
+.cvssjs .Low {
+    background-color: burlywood;
+}
+
+.cvssjs dl.C dd:last-child input:checked + label,
+.cvssjs dl.I dd:last-child input:checked + label,
+.cvssjs dl.A dd:last-child input:checked + label,
+.cvssjs .None {
+    background-color: burlywood;
+}
+
+.cvssjs dd:nth-child(2) label:hover {
+    background-color: burlywood;
+}
+
+.cvssjs dd label:hover {
+    background-color: burlywood;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.cvssjs dl.PR dd:last-child label:hover,
+.cvssjs dd:last-child label:hover,
+.cvssjs dl.AV dd:nth-child(4) label:hover {
+    background-color: burlywood;
+}
+
+.cvssjs dl.C dd:last-child label:hover,
+.cvssjs dl.I dd:last-child label:hover,
+.cvssjs dl.A dd:last-child label:hover {
+    background-color: burlywood;
+}
+
+.cvssjs hr {
+    border-style: dashed;
+    color: #949ca0;
+}
+
+.cvssjs .score,
+.cvssjs .vector,
+.cvssjs .severity {
+    margin: 2px;
+    display: inline-block;
+}
+
+.cvssjs .score {
+    width: 1.5em;
+    margin-left: 10px;
+}
+
+.cvssjs .severity {
+    width: 20%;
+    border: 2px solid black;
+    padding: 5px;
+    text-align: center;
+    background-color: #489;
+}
+
+.cvssjs .results {
+    padding: 7px;
+    width: 50%;
+    font-weight: bold;
+}
+
+.cvssjs dl dd label.results:hover {
+    background-color: white;
+}
+
+.cvssjs .results sub {
+    display: none;
+    font-size: x-small;
+}
+.cvssjs .vector {
+    display: none;
+}
